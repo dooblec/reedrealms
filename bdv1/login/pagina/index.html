@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Bienvenido a la Tienda de ReedRealms</h1>
+        </div>    
+
+        <nav>
+            <a href="index.html">Inicio</a>
+    </header>
+
+    <main>
+        <h2>Bienvenido a la Tienda</h2>
+        <p>Elige una de las opciones disponibles para comprar.</p>
+
+        <!-- Contenedor de las opciones de compra en formato de cuadrícula -->
+        <div class="options-container">
+            <div class="option-item">
+                <h3>Comprar R-Coins</h3>
+                <!-- Botón para redirigir a rcoins.html -->
+                    <a href="rcoins.html" class="btn">Comprar ahora</a>
+            </div>
+            <div class="option-item">
+                <h3>Comprar Rangos</h3>
+                    <!-- Botón para redirigir a ranks.html -->
+                    <a href="ranks.html" class="btn">Comprar ahora</a>
+            </div>
+            <div class="option-item">
+                <h3>Comprar Tags</h3>
+                    <!-- Botón para redirigir a tags.html -->
+                    <a href="tags.html" class="btn">Comprar ahora</a>
+            </div>
+            <div class="option-item">
+                <h3>Comprar Unban</h3>
+                    <!-- Botón para redirigir a unbans.html -->
+                    <a href="unbans.html" class="btn">Comprar ahora</a>
+            </div>
+            <div class="option-item">
+                <h3>Hacer una donación</h3>
+                <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="business" value="reedrealms.negocios@gmail.com">
+                <input type="hidden" name="item_name" value="Donación para el servidor Minecraft">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="submit" value="Donar con PayPal" class="btn-paypal">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
